@@ -1,0 +1,130 @@
+.list-nav{
+    display: flex;
+    list-style: none;
+}
+
+.list-nav li{
+    margin: auto 5px;
+}
+
+.hello-user{
+    text-align: end;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding:90px 30px 0 30px;
+    background-color: rgb(70, 69, 69);
+    color: #fff;
+}
+
+.social-logo img{
+    margin: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.card-product {
+    display: flex;
+    flex-flow: column;
+    padding: 50px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-product button{
+    width: 30%;
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+
+.card-product span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-product{
+    position: relative;
+}
+
+.banner-price{
+    padding: 10px;
+    background-color: rgba(var(--bs-dark-rgb));
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgba(var(--bs-warning-rgb));
+    position: absolute;
+    top: 60px; 
+    right: 40px;
+}
+.card-product figcaption {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: center;
+}
+
+main{
+    position: relative;
+}
+
+.footer-banner{
+    background-color: #fff;
+    padding: 5px;
+    padding-top: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    position: absolute;
+    top: 98%;
+    left: 25%;
+}
+
+.footer-banner li{
+    list-style: none;
+    margin: auto 15px;
+    color: gray;
+}
+
+.footer-banner li:nth-child(2n){
+    color: lightgray;
+}
+
+@media screen and (max-width: 640px) {
+    .hello-user{
+        text-align: start;
+        margin: auto 5px;
+    }
+    .list-nav{
+        padding: 0;
+    }
+    .footer-banner{
+        font-size: 10px;
+        top: 99%;
+        left: 16%;
+        width: auto;
+    }
+    .footer-banner ul li{
+        margin: auto 5px;
+    }
+
+    .card-product{
+        padding: 20px;
+    }
+
+    .card-product span{
+        font-size: 20px;
+    }
+    .card-product button{
+       font-size: 15px;
+       width: fit-content;
+    }
+    .banner-price{
+        top: 30px; 
+        right: 2px;
+    }
+  }
